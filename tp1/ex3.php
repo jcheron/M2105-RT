@@ -1,3 +1,11 @@
+<?php
+$col=0;
+$lig=0;
+if(array_key_exists("nbCols",$_POST)) {
+	$col = $_POST["nbCols"];
+	$lig = $_POST["nbLignes"];
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +16,8 @@
 <div>
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']?>">
 		<fieldset style="vertical-align: middle;"><legend>Création de Tableau :</legend>
-			<label for="nbLignes">Lignes : </label><input type="number" name="nbLignes" id="nbLignes">
-			<label for="nbCols">Colonnes : </label><input type="number" name="nbCols" id="nbCols"">
+			<label for="nbLignes">Lignes : </label><input type="number" name="nbLignes" id="nbLignes" value="<?php echo $lig ?>">
+			<label for="nbCols">Colonnes : </label><input type="number" name="nbCols" id="nbCols" value="<?php echo $col ?>">
 			<input type="submit" value="Créer le tableau">
 			<hr>
 		</fieldset>
@@ -30,13 +38,11 @@ echo"<tr>";
 	echo "</tr>";
     
 }
-echo "/<table>";
+echo "</table>";
 
 }    
 //Test de création
-	if(array_key_exists("nbRows",$_GET))
-	createHTMLtable($_GET["nbRows"],$_GET["nbCols"]);
-	echo createHTMLtable;
+	createHTMLtable($lig,$col);
 ?>
 
 
