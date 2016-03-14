@@ -1,4 +1,6 @@
-<?php include "ex1.php" ?>
+<?php 
+include "../synthese1/menu.php";
+include "ex1.php" ?>
 <!doctype html>
 <html>
 <head>

@@ -1,4 +1,6 @@
 <?php
+include "./synthese1/menu.php";
+
 function createHTMLTable($nbLignes,$nbCols){
   echo "<table border='1'>";
   for($i=0;$i<$nbLignes;$i++){

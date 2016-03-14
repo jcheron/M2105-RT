@@ -1,4 +1,5 @@
 <?php
+include "synthese1/menu.php";
   include "./ex1/ex1.php";
   $operations=array("addition","soustraction","multiplication","division");
   $a=50;$b=25;

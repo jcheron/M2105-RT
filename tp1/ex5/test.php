@@ -5,6 +5,7 @@
  * Date: 09/03/2016
  * Time: 18:43
  */
+include "../synthese1/menu.php";
 include_once "functions.php";
 for($i=0;$i<10;$i++) {
     echo "La factorielle de {$i} est " . fact($i) . "<br>";

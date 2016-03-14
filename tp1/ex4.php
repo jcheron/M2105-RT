@@ -5,6 +5,7 @@
  * Date: 09/03/2016
  * Time: 17:41
  */
+include "./synthese1/menu.php";
 function createHTMLTable($nbLignes,$nbCols){
     echo "<table border='1'>";
     for($i=0;$i<$nbLignes;$i++){
