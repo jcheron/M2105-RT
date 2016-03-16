@@ -41,7 +41,7 @@ if(array_key_exists("rows",$_POST)){
 </form>
 </fieldset>
 <?php
-echo createHTMLTable($rows,$cols);
+    echo createHTMLTable($rows,$cols);
 ?>
 </body>
 </html>
