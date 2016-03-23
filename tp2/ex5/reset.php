@@ -6,7 +6,7 @@
  * Time: 14:46
  */
 include '../functions.php';
-getHeader(true, "Exercice 5");
+getHeader(true, "Exercice 6");
 $_SESSION = array();
 session_destroy();
 ?>
